@@ -36,11 +36,11 @@ how much the user agrees or disagrees with a question. -->
 
             <div class="form-group">
                 <h3>Name</h3>
-                <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter your name">
             </div>
             <div class="form-group">
                 <h3>Link To Picture</h3>
-                <input type="text" class="form-control" id="photoInput" placeholder="Password">
+                <input type="text" class="form-control" id="photoInput" placeholder="Enter a url">
             </div>
 
         </form>
@@ -171,8 +171,10 @@ how much the user agrees or disagrees with a question. -->
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img id="matched-image" src="" alt="Your Match">
+                        <img id="matched-image" src="/app/public/images/ashley.jpg" alt="Your Match">
                         <h3 id="matched-person">You Matched with</h3>
+                        <h3 id="matched-rate">You Matched with</h3>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -241,6 +243,7 @@ how much the user agrees or disagrees with a question. -->
                         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                         $("#matched-person").text(data.Name);
                         $("#matched-image").attr("src", data.PhotoUrl);
+                        $("#matched-rate").text(data.rate + "%");
 
                         // Show the modal with the best match
                         $("#results-modal").modal("toggle");

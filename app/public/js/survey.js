@@ -55,9 +55,10 @@ $(document).ready(function() {
     // AJAX post the data to the friends API.
     //   $.post("/api/friends", userData, function(data) {
 
-    //     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-    $("#matched-person").text(data.name);
+    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+    $("#matched-person").text(data.Name);
     $("#matched-image").attr("src", data.photo);
+    $("#match-rate").text(data.Rate);
 
     // Show the modal with the best match
     $("#results-modal").modal("toggle");
