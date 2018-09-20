@@ -1,0 +1,294 @@
+<!-- 1. Your survey should have 10 questions of your choosing.
+Each answer should be on a scale of 1 to 5 based on
+how much the user agrees or disagrees with a question. -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center">
+            <h1>Friend Finder!</h1>
+            <p>Find your love with our survey questions .</h4>
+        </div>
+        <hr>
+        <!-- About you Form -->
+        <form>
+
+            <div class="form-group">
+                <h3>Name</h3>
+                <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <h3>Link To Picture</h3>
+                <input type="text" class="form-control" id="photoInput" placeholder="Password">
+            </div>
+
+        </form>
+        <hr>
+        <!-- Survey -->
+
+        <!-- Question 1 -->
+        <h3>Question 1</h3>
+        <h4>Sudoku and Chill is a fun time for you</h4>
+        <select name="q1" id="q1">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 2 -->
+        <h3>Question 2?</h3>
+        <h4>You enjoy owning a pet</h4>
+        <select name="q2" id="q2">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 3 -->
+        <h4>Question 3</h4>
+        <h4>Do long walks on the beach sound tempting to you?</h4>
+        <select name="q3" id="q3">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 4 -->
+        <h3>Question 4</h3>
+        <h4>Are tempted to walk out on everything in life and live in a shed?</h4>
+        <select name="q4" id="q4">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 5 -->
+        <h3>Question 5</h3>
+        <h4>Gold farming is a hobby of yours</h4>
+        <select name="q5" id="q5">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 6 -->
+        <h3>Question 6</h3>
+        <h4>Milkshakes failed in making you happy during a sad time</h4>
+        <select name="q6" id="q6">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 7 -->
+        <h3>Question 7</h3>
+        <h4>Is food always on your mind?</h4>
+        <select name="q7" id="q7">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 8 -->
+        <h3>Question 8</h3>
+        <h4>Canoeing sounds like a good time to you</h4>
+        <select name="q8" id="q8">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 8 -->
+        <h3>Question 9</h3>
+        <h4>You like to explore new places</h4>
+        <select name="q9" id="q9">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <!-- Question 8 -->
+        <h3>Question 10</h3>
+        <h4>Cooking is a chore for you</h4>
+        <select name="q10" id="q10">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Submit -->
+        <div class="row mt-3 mb-3">
+            <button type="submit" class="btn btn-primary btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <h4><a href="/api/friends">API Friends Link</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Capture the form inputs
+        $(document).ready(function () {
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+                console.log("This click");
+                let isTrue = false;
+                // Form validation
+                function validateForm() {
+                    if ($("#photoInput").val() == "" || $("#nameInput").val() == "") {
+                        return false;
+                    } else {
+                        return true;
+                    }
+
+                }
+
+                // If all required fields are filled
+                if (validateForm()) {
+                    // Create an object for the user"s data
+                    var userData = {
+                        name: $("#nameInput").val(),
+                        photo: $("#photo").val(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
+                    console.log("This");
+
+                    $.post("/friends", userData, function (data) {
+
+                        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                        // $("#match-name").text(data.name);
+                        // $("#match-img").attr("src", data.photo);
+
+                        // Show the modal with the best match
+                        $("#results-modal").modal("toggle");
+                        console.log(data);
+
+                    });
+                    // $.ajax({
+
+                    //     url: '/api/friends',
+                    //     type: 'POST',
+                    //     data: {
+                    //         userData
+                    //     },
+                    //     dataType: 'json',
+                    //     success: function (data) {
+                    //         alert('Data: ' + data);
+                    //     },
+                    //     error: function (request, error) {
+                    //         alert("Request: " + JSON.stringify(request));
+                    //     }
+                    // });
+
+                } else {
+                    console.log("False");
+
+                }
+
+                // AJAX post the data to the friends API.
+                //   $.post("/api/friends", userData, function(data) {
+
+                //     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                //     $("#match-name").text(data.name);
+                //     $("#match-img").attr("src", data.photo);
+
+                //     // Show the modal with the best match
+                //     $("#results-modal").modal("toggle");
+
+                //   });
+                // } else {
+                //   alert("Please fill out all fields before submitting!");
+                // }
+            });
+        });
+    </script>
+
+
+</body>
+
+
+
+
+</html>
