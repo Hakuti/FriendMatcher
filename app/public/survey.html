@@ -171,7 +171,8 @@ how much the user agrees or disagrees with a question. -->
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <img id="matched-image" src="" alt="Your Match">
+                        <h3 id="matched-person">You Matched with</h3>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -238,8 +239,8 @@ how much the user agrees or disagrees with a question. -->
                     $.post("/friends", userData, function (data) {
 
                         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                        // $("#match-name").text(data.name);
-                        // $("#match-img").attr("src", data.photo);
+                        $("#matched-person").text(data.name);
+                        $("#matched-image").attr("src", data.photo);
 
                         // Show the modal with the best match
                         $("#results-modal").modal("toggle");
