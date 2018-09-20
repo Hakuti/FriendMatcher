@@ -239,8 +239,8 @@ how much the user agrees or disagrees with a question. -->
                     $.post("/friends", userData, function (data) {
 
                         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                        $("#matched-person").text(data.name);
-                        $("#matched-image").attr("src", data.photo);
+                        $("#matched-person").text(data.Name);
+                        $("#matched-image").attr("src", data.PhotoUrl);
 
                         // Show the modal with the best match
                         $("#results-modal").modal("toggle");
