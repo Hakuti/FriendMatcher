@@ -15,5 +15,3 @@ If there are any questions, ask and I'll be willing to answer the entire functio
 **Enjoy!**
 
 # Hakuti.github.io
-
-# MongoScrapeV1
